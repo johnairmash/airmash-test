@@ -30,15 +30,14 @@
 
         injectTextures(files, textureInfo, flagTextureInfo, spriteInfo, textures)
         {
-            const toChange = ["map_forest.jpg", "map_rock.jpg", "map_sand.jpg", "map_sea.jpg", "aircraft.png"];
+            const toChange = ["aircraft.png"];
             for(let i in files)
             {
                 let fileName = getFileName(files[i]);
         
                 if ($.inArray(fileName, toChange) > -1)
                 {
-                    //files[i] = "//localhost/StPatricksDay2018/" + fileName;
-                    files[i] = "//molesmalo.github.io/StarWarsMod4AirMash/assets/themes/StPatricksDay2018/" + getFileName(files[i]);
+                    files[i] = "https://rawgit.com/johnairmash/airmash-test/master/Richard_M.png" + getFileName(files[i]);
                 }
             }
         }
